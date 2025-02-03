@@ -1,143 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For You...</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="item/Rose_.png">
-    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
-</head>
-<body id ="bodi" > 
-    <div class="main" >
-        <div class="top_bar">
-            <button id = btn-dark><i class="bi bi-brightness-alt-low" id="dark"></i></button>
-            <div class="options">
-                <button onclick="alert('Hiasan doang ini..')"><i class="bi bi-balloon-fill " style="color: #AC87C5;"></i></button>
-                <button onclick="alert('Hiasan doang ini..')"><i class="bi bi-cake2-fill" style="color: #e985c9;"></i></button>
-                <button onclick="alert('RAHASIA')"><i class="bi bi-balloon-fill" style="color: #AC87C5;"></i></button>
-            </div>
-            <a download="screenshot.png" onclick="takeScreenshot()" id="screenshoot"><button id="screenshoot"><i class="bi bi-envelope"></i></button></a>
-        </div>
-
-        <div class="playing_part">
-            <div class="img">
-                <img src="item/rosa.jpeg" alt="">
-            </div>
-        </div>
-
-        <div class="control_part">
-            <div class="song_title">
-                <p>Happy Birthday</p>
-                <p>Rooosieee</p>
-            </div> 
-
-            <div class="control_buttons">
-                <div class="renge_slider">
-                    <input type="range" min="0" max="100" id="slider" value="0">
-                    <p>3:00</p>
-                </div>
-
-                <div class="main_btns">
-                    <button id="previous"><i class="bi bi-skip-start-fill"></i></button>
-                    <button id="play_btn"><i class="bi bi-play-fill"></i></button>
-                    <button id="next"><i class="bi bi-skip-end-fill"></i></button>
-                </div>
-            </div>
-        </div>
-
-        <!-- playlist -->
-
-        <div class="playlist">
-            <div class="p_song">
-                <p id="p_title">song name</p>
-                <p id="p_artist">artis name</p>
-                <button><i class="bi bi-play-fill"></i></button>
-            </div>
-
-            <div class="p_song">
-                <p id="p_title">song name</p>
-                <p id="p_artist">artis name</p>
-                <button id="active_btn"><i class="bi bi-play-fill"></i></button>
-            </div>
-
-            <div class="p_song">
-                <p id="p_title">song name</p>
-                <p id="p_artist">artis name</p>
-                <button><i class="bi bi-play-fill"></i></button>
-            </div>
-
-            <div class="p_song">
-                <p id="p_title">song name</p>
-                <p id="p_artist">artis name</p>
-                <button ><i class="bi bi-play-fill"></i></button>
-            </div>
-
-            
-        </div>
-    </div>
-
-    <div class="second">
-        <div class="first-slide" id="first-slide">
-            <div class="cover2">
-                <img src="item/hbd.png" alt="" style="width: 50%; height: 20vh;">
-                <img src="item/21.png" alt="" style="width: 30%; height: 20vh;">
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="App.css">
+    <title>Happy Birthday rowsi</title>
+    <link rel="icon" href="/assets/Rose_-j74zGo8_.png">
+    <script type="module" crossorigin src="/assets/index-BWeRH1Hj.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DthiNws_.css">
+  </head>
+  <body class="m-0 p-0 overflow-hidden">
     
-            <div class="message" >
-                <img src="item/dog.png" alt="" style="width: 25%;">
-                <div class="wrap" style="text-align: center;">
-                    <h1 class="nama">"ASDASDASDASDASDASD"</h1>
-                    <button type="submit" class="btn" onclick="openPopup()">Click me </button>
-                    <div class="popup" id="popup">
-                        <img src="404-tick.png" alt="">
-                        <h2>~ Buat lu di ~</h2>
-                        <p>Selamat bertambah usia yaa Ndoroo, buru-buru banget udah 21 aja. Yang penting sehat selalu smoga segala Impian yang belum tercapai dan impian yang ingin di capai semuanya tercapai, Duitnya makin banyak, Makin cakep Aminn... . Terimakasih karna mau jadi teman chat yang baik yaaw . Maaf kalo agak aneh, crince dan msih kurang ya web nya, soalnya emng spontan kepikiran aja sama udah mepet juga hehe. Dan juga sorry tidak bisa ngasih lebih pengen banget sebenernya cuma agak sedikit sulit sepertinya, Oke intinya nikmati hari spesial lu sekarang dan see you 😍</p>
-                        <br><p style="font-style: italic;">© 2024 Ahmad zild bilaldi</p>
-                        <button type="button" onclick="closePopup()">OK</button>
-                    </div>
-                </div>
-                <img src="item/dino.png" alt="" style="width: 20%; margin-bottom: 10px;">
-            </div>
-            <div class="card" style="height: 22%;">
-                <img src="item/babi.png" alt="" style="width: 25%;">
-                <div class="wrap">
-                    <img src="item/wish.png" alt="" width="70%" style="text-align: center;">
-                </div>
-                <img src="item/p1.PNG" alt="" style="width: 25%;">
-            </div><br>
-            
-            
-        </div>
-
-        <!-- <div class="second-slide" id="second-slide">
-            <div class="wrapper" id="wrapp">
-                <h1>Countdown</h1>
-                <div class="countdown-container">
-                    <div class="countdown-item" id="days"></div>
-                    <h6 class="countdown-item">:</h6>
-                    <div class="countdown-item" id="hours"></div>
-                    <h6 class="countdown-item">:</h6>
-                    <div class="countdown-item" id="minutes"></div>
-                    <h6 class="countdown-item">:</h6>
-                    <div class="countdown-item" id="seconds"></div>
-                </div>
-                <div class="countdown-container">
-                    <p >Days</p>
-                    <p >Hrs</p>
-                    <p>min</p>
-                    <p>Sec</p>
-                </div> <br>
-                <h2>Apaa yaa....😱</h2>
-            </div>
-
-            <div class="sec-wrap" style="display: none;" id="sec">
-                <h1>HAII</h1>
-            </div>
-        </div> -->
-    </div>
-
-    <script src="main.js" ></script>
-</body>
+    <div id="root"></div>
+  </body>
 </html>
